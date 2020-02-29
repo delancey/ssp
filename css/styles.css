@@ -1,0 +1,211 @@
+/*general page styling*/
+
+*{
+	font-family: "Montserrat", helvetica, sans-serif;
+    color: #dcdddf;
+	letter-spacing: 1.1px;
+	max-width: 2400px;
+}
+.container{
+  margin: 0 25px;
+  text-align: center;
+  background: url(/images/fiber.jpg);
+  background-repeat: repeat;
+  background-size: cover;
+}
+
+h1{
+	font-family: 'Montserrat';
+	font-weight: 800;
+	font-size: 48px;
+	text-transform: uppercase;
+	text-align: center;
+  
+}
+
+p{
+	font-weight: 400;
+	text-align: center;
+}
+
+/*end general styling*/
+
+header{
+	display: flex;
+	flex-direction: column;
+  padding-top: 20px;
+}
+
+
+img{
+	align-self: center;
+
+}
+
+.logo{
+  width: 250px;
+}
+
+/*form styling*/
+input{
+    box-sizing: border-box;
+	border-radius: .3em;
+	background-color: #fffafc;
+	height: 45px;
+	width: 75%;
+	margin-bottom: 10px;
+    align-items:center;
+	font-weight: 400;
+	font-size: 14px;
+	color: #284ce0;
+}
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="text"]:active,
+input[type="email"]:active{
+	font-weight: 600;
+	background-color: #eaeaea;
+	color: #284ce0;
+  /* text typed by user*/
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus{
+	outline: 3px solid #284ce0;
+	outline-style: inset;
+}
+
+input[placeholder]{
+  padding-left: 10px;
+}
+
+
+
+input[type="submit"]{
+	background-color: #284ce0;
+	color: white;
+	font-weight: 400;
+	font-size: 18px;
+	text-transform: uppercase;
+    /* for submit button*/
+}
+
+input[type="submit"]:hover{
+	background-color: #f3f3f3;
+	color: #284ce0;
+    font-weight: 700;
+}
+
+
+input[type="submit"], 
+input[type=submit]:focus,
+input[type=submit]:active{
+	outline: none;
+	border: none;
+}
+
+/*end form styling*/
+
+
+/*footer styling*/
+
+footer{
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-wrap: wrap;
+	margin-top: 2em;
+}
+
+footer img{
+    height: 50px;
+	margin: 10px;
+}
+
+
+
+
+/*Media Query --------------------------------------------------------------------------------tablet and desktop styling-----------------------------------------------------------------------------------------------Media Query*/
+
+
+@media (min-width: 720px){
+
+  .container{
+
+    max-width: 1200px;
+    margin 0 auto;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+	
+	
+img{
+	align-self: center;
+
+}
+
+	section{
+		margin-bottom: 50px;
+	}
+
+  
+  
+/*  media query form styling*/
+	form{ 
+	  display: flex;
+      max-width: 800px;
+      margin: auto;
+	}
+
+    #name,
+    #email{
+      flex-basis:2200px;
+      margin-right: 5px;
+    }
+
+    #submit{
+      height: 45px;
+    }
+	
+
+	input[placeholder]{
+	text-align: left;
+}
+  
+/*  media query footer styling*/
+	footer{
+		max-width: 1200px;
+      margin: auto;
+	}
+
+	.follow{
+		width: 160px;
+		transform: rotate(-15deg);
+		text-align: left;
+		margin: 20px 0  -12px -50px;
+		background: none;
+	}
+	
+	footer p{
+		flex-basis: 100%;
+    }
+
+} /*media query end*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
