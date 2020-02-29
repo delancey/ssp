@@ -8,7 +8,7 @@
 }
 
 body{
-  background: url("images/fiber.jpg") black;
+  background: url(/images/fiber.jpg) black;
   background-repeat: repeat;
   background-size: cover;
 }
@@ -43,7 +43,11 @@ header{
 
 img{
 	align-self: center;
+}
 
+.responsive{
+  max-width: 100%;
+  height: auto;
 }
 
 .logo{
