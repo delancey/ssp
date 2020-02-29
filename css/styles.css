@@ -40,14 +40,17 @@ header{
   padding-top: 20px;
 }
 
-
+section img{
+  max-width: 480px;
+}
 img{
 	align-self: center;
 }
 
 .responsive{
-  max-width: 100%;
+  max-width: 80%;
   height: auto;
+  padding-bottom: 20px
 }
 
 .logo{
