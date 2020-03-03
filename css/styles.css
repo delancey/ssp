@@ -4,10 +4,12 @@
 	font-family: "Montserrat", helvetica, sans-serif;
     color: #dcdddf;
 	letter-spacing: 1.1px;
-	max-width: 2400px;
+	
 }
 
 body{
+  display: flex;
+  justify-content: center;
   background: url(/images/fiber.jpg) black;
   background-repeat: repeat;
   background-size: cover;
@@ -50,7 +52,7 @@ img{
 .responsive{
   max-width: 80%;
   height: auto;
-  padding-bottom: 20px
+  padding-bottom: 20px;
 }
 
 .logo{
@@ -134,7 +136,9 @@ footer img{
 	margin: 10px;
 }
 
-
+footer p{
+		flex-basis: 100%;
+    }
 
 
 /*Media Query --------------------------------------------------------------------------------tablet and desktop styling-----------------------------------------------------------------------------------------------Media Query*/
@@ -198,25 +202,6 @@ img{
 		background: none;
 	}
 	
-	footer p{
-		flex-basis: 100%;
-    }
+	
 
 } /*media query end*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
